@@ -1,6 +1,6 @@
 body {
     font: 20px "Century Gothic", Futura, sans-serif;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-left: 800px;
     background-color: #2a9d8f;
 }
@@ -9,6 +9,25 @@ ol,
 ul {
     padding-left: 30px;
 }
+
+h1  {
+    color: #264653;
+    font-size: 3.5rem;
+    margin-left: 100px;
+}
+
+#moves   {
+    background-color: #264653;
+    font-size: 1.2rem;
+    width: 160px;
+    height: 60px;
+    color: #e9c46a;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e9c46a;
+    border-radius: 10px;
+}
+
 
 .board-row:after {
     clear: both;
