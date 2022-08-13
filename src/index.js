@@ -66,7 +66,7 @@ class Game extends React.Component {
         if (calculateWinner(squares) || squares[i]) {
             return;
         }
-        squares[i] = this.state.xIsNext ? 'x' : 'O';
+        squares[i] = this.state.xIsNext ? 'X' : 'O';
         this.setState({
             history: history.concat([{
                 squares: squares,
@@ -94,7 +94,7 @@ class Game extends React.Component {
                 'Go to move #' + move :
                 'Go to game start';
             return(
-                <li key={move}>
+                <li key={move} >
                     <button onClick={() => this.jumpTo(move)} id="moves">{desc}</button>
                 </li>
             );
@@ -102,9 +102,9 @@ class Game extends React.Component {
 
         let status;
         if (winner) {
-            status = 'Winner' + winner;
+            status = 'Winner: ' + winner + '!';
         } else {
-            status = 'Next player' + (this.state.xIsNext ? 'X' : 'O');
+            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
         }
 
 
@@ -118,7 +118,7 @@ class Game extends React.Component {
                         onClick={i => this.handleClick(i)} />
                     </div>
                     <div className="game-info">
-                        <div>{status}</div>
+                        <div id="status">{status}</div>
                         <ol>{moves}</ol>
                     </div>
                 </div>

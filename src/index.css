@@ -12,7 +12,7 @@ ul {
 
 h1  {
     color: #264653;
-    font-size: 3.5rem;
+    font-size: 3.9rem;
     margin-left: 100px;
 }
 
@@ -28,6 +28,10 @@ h1  {
     border-radius: 10px;
 }
 
+li{
+    color: #264653;
+    font-size: 1.5rem;
+}
 
 .board-row:after {
     clear: both;
@@ -37,6 +41,12 @@ h1  {
 
 .status {
     margin-bottom: 10px;
+}
+
+#status {
+    color: #e9c46a;
+    font-size: 1.9rem;
+    margin-left: 10px;
 }
 
 .square {
